@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>EMPLOYEE DETAILS DILOG</h1>
+<div mat-dialog-content>
+    <form [formGroup]="employeeForm">
+        <mat-form-field appearance="outline">
+            <mat-label>EMP_ID</mat-label>
+            <input  formControlName="EMP_ID" matInput placeholder="Employee ID"></mat-form-field>
+    <br>        
+        <mat-form-field appearance="outline">
+            <mat-label>EMPLOYEE NAME</mat-label>
+            <input  formControlName="Name" matInput placeholder="NAME"></mat-form-field>
+    <br>
+            <mat-form-field appearance="outline">
+                <mat-label>EMPLOYEE EMAIL ID</mat-label>
+                <input formControlName="Email" matInput placeholder="Example@gmail.com"></mat-form-field>
+    
+    </form>
+<br>
+<button style="margin-left:8px;" mat-raised-button color="primary" (click)="addProduct">SAVE</button>
+<button style="margin-left:10px;" mat-raised-button color="warn" mat-dialog-close>CLOSE</button>
+</div>
